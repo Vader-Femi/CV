@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".fragments.EducationFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardLASU"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvBScCSC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:text="@string/bsc_computer_science"
+                    android:textStyle="bold"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvLASU"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_below="@id/tvBScCSC"
+                    android:text="@string/lagos_state_university"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLASU"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/_01_2019_present"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvCourses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvRange"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/courses"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvOOPCPP"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/tvCourses"
+                    android:text="@string/object_oriented_nprogramming_c"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvOOPJava"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_below="@id/tvCourses"
+                    android:text="@string/object_oriented_nprogramming_java"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvDBMS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvOOPJava"
+                    android:text="@string/database_management_nsystem"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSoftwareEngineering"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvOOPJava"
+                    android:text="@string/software_engineering"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvHCI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvDBMS"
+                    android:text="@string/human_computer_ninterface"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvDiscreteMaths"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvDBMS"
+                    android:text="@string/discrete_mathematics"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvAlgorithm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvHCI"
+                    android:text="@string/algorithm_and_it_s_ncomplexity"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvDSA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@id/tvHCI"
+                    android:text="@string/data_structures_and_nalgorithm"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</ScrollView>

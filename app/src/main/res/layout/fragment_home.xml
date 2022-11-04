@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".fragments.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardMe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="7dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp">
+
+                <LinearLayout
+                    android:id="@+id/relativeAbout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/myImage"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:text="Oluwafemi\nOkedeyi"
+                        android:textAlignment="viewStart"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="3dp"
+                        android:text="@string/android_mobile_developer"
+                        android:textColor="@color/design_default_color_secondary"
+                        android:textAlignment="viewStart"
+                        android:textSize="15sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvAboutMe"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="@string/a_self_taught_android_developer_passionate_about_android_and_the_world_of_kotlin"
+                        android:textAlignment="viewStart"
+                        android:textSize="11sp" />
+
+
+                </LinearLayout>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/myImage"
+                    android:layout_width="90dp"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/me"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/relativeSocials"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/myImage"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="oluwafemi.za@gmail.com"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvPhone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="08057957964"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvLocation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/lagos_nigeria"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvLinkedin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="linkedin.com/in/oluwafemi-okedeyi"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvGithub"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="github.com/Vader-Femi"
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textAlignment="viewEnd"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardSkills"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardMe"
+            android:layout_margin="7dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="7dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSkill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/skills"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillKotlin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kotlin"
+                    android:layout_marginEnd="3dp"
+                    android:textAllCaps="false"
+                    android:layout_below="@id/tvSkill"
+                    android:layout_alignParentStart="true"
+                    app:elevation="7dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillAndroidDevelopment"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_toEndOf="@id/skillKotlin"
+                    android:text="Android"
+                    android:textAllCaps="false"
+                    android:layout_below="@id/tvSkill"
+                    app:elevation="7dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillRetrofit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Retrofit"
+                    android:layout_marginStart="3dp"
+                    android:layout_below="@id/tvSkill"
+                    android:textAllCaps="false"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/skillAndroidDevelopment"
+                    app:elevation="7dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillProblemSolving"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/skillRetrofit"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="3dp"
+                    android:text="@string/problem_solving"
+                    android:textAllCaps="false"
+                    app:elevation="7dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillMVVM"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/skillPreferenceDS"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_toEndOf="@id/skillRoomDB"
+                    android:text="@string/mvvm_clean_architecture"
+                    android:textAllCaps="false"
+                    app:elevation="7dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillRoomDB"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/skillPreferenceDS"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="3dp"
+                    android:text="Room Database"
+                    android:textAllCaps="false"
+                    app:elevation="7dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillPreferenceDS"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/skillRetrofit"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_toEndOf="@id/skillProblemSolving"
+                    android:text="Preference Datastore"
+                    android:textAllCaps="false"
+                    app:elevation="7dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillOnlineSync"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/skillMVVM"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="3dp"
+                    android:text="@string/online_syncing_and_caching"
+                    android:textAllCaps="false"
+                    app:elevation="7dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillREST"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rest APIs"
+                    android:layout_marginStart="3dp"
+                    android:textAllCaps="false"
+                    android:layout_below="@id/skillMVVM"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/skillOnlineSync"
+                    app:elevation="7dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillAndroidArchitecture"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/skillREST"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginEnd="3dp"
+                    android:text="@string/android_architecture_components"
+                    android:textAllCaps="false"
+                    app:elevation="7dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/skillJSON"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JSON"
+                    android:layout_marginStart="3dp"
+                    android:textAllCaps="false"
+                    android:layout_below="@id/skillREST"
+                    android:layout_alignParentEnd="true"
+                    android:layout_toEndOf="@id/skillAndroidArchitecture"
+                    app:elevation="7dp"
+                    style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardLanguages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cardSkills"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvLanguages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/languages"
+                    android:textAlignment="center"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvEnglish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLanguages"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:text="@string/english"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvEnglishProf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvEnglish"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/full_professional_proficiency"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSpanish"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvLanguages"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="7dp"
+                    android:text="@string/spanish"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvSpanishProf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvEnglish"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/elementary_proficiency"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvFrench"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvEnglishProf"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/french"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvFrenchProf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvFrench"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/elementary_proficiency"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvYoruba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvSpanishProf"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/yoruba"
+                    android:textAlignment="viewStart"
+                    android:textSize="16sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvYorubaProf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvYoruba"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/limited_working_proficiency"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </RelativeLayout>
+
+
+
+</ScrollView>

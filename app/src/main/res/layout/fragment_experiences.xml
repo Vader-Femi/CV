@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".fragments.ExperiencesFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardArkounting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="20dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="10dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="7dp">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvAndroidIntern"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="7dp"
+                    android:text="@string/android_developer_intern"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvArkounting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAndroidIntern"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/arkounting_business_concepts"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textAlignment="viewStart"
+                    android:textSize="18sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvRange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvArkounting"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/_01_2022_10_2022"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvAboutArkounting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvRange"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="7dp"
+                    android:text="@string/about_arkounting"
+                    android:textAlignment="viewStart"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvAchievements"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAboutArkounting"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/achievements_tasks"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/design_default_color_secondary"
+                    android:textSize="12sp"
+                    android:textStyle="italic" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvAchievements1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAchievements"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/arkounting_achievement_1"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvAchievements2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAchievements1"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp"
+                    android:text="@string/arkounting_achievement_2"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvAchievements3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tvAchievements2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/arkounting_achievement_3"
+                    android:textAlignment="viewStart"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </RelativeLayout>
+
+</ScrollView>
