@@ -24,4 +24,4 @@ I would have also loved to create more screen layout files for the home tab if I
 The Appetize link is 
 https://appetize.io/app/plord74ui7oi7png2dddh2f4ki
 
-The only challenge I faced trying the optimize the home tab to scale well for most devices
+The only challenge I faced trying the optimize the home tab to scale well for most devices ( currently, it only scales well on larger devices like Pixel 6, and it looks bad on Pixel 4)
